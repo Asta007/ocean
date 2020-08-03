@@ -1,0 +1,104 @@
+:root{
+    --main-blue : #27A2F3;
+    --text-blue : #7DB2E2;
+    --bright-blue :#9ED2FC;
+}
+
+/* var(--main-blue) */
+
+@font-face{
+    font-family: gochi;
+    src:url('GochiHand-Regular.ttf');
+}
+@font-face{
+    font-family: open;
+    src:url('OpenSans-Regular.ttf');
+}
+
+body,html{
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+#container{
+}
+
+#land{
+    /* border: solid red 1px; */
+    width: 80%;
+    margin: auto;
+    /* height: 50vh; */
+    padding: 70px 15px;
+    height: 50vh;
+}
+
+#ocean{
+    background-image: url(Union.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:70px;
+    
+}
+
+#oceancont{
+    /* border: solid red 1px; */
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+h1{
+    width: 100%;
+    font-family: gochi;
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+p.sub{
+    font-size: 1.6em;
+    font-family: open;
+    width: 80%;
+    margin: 0;
+}
+
+#land h1{
+    color : var(--main-blue)
+}
+
+#land p.sub{
+    color : var(--text-blue)
+}
+
+#ocean h1{
+    color:#fff;
+    text-align: right;
+}
+
+#ocean p.sub{
+    color : var(--bright-blue);
+    text-align: right;
+    float: right;
+}
+
+/* = = = == = = = = scrolbar */
+
+body::-webkit-scrollbar{
+    width: 8px;
+    /* background-color: var(--bright-blue); */
+    background-color: #efefef;
+}
+body::-webkit-scrollbar-track{
+
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--text-blue);
+}
